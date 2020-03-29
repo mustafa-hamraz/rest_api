@@ -6,9 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    $foo = "<h1> this is php</h1>";
-    echo $foo;
+    <?php 
+        $startPage = '<form method="post" action="api.php">
+                    <h2> Welcome! Choose a city</h2>
+                    <input type="submit" value="Stockholm" name="user">
+                    <input type="submit" value="London" name="user">
+                </form>';
+
+        echo $startPage;
     ?>
 </body>
 </html>
